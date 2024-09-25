@@ -23,11 +23,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-$direction: rtl ;
+$direction: rtl  !important;
 
 body {
-  direction: $direction ;
-  text-align: if($direction == rtl, right, left);
+ 
+  text-align: if($direction == rtl !important, right, left !important);
 }
 :root {
   --one-color: #3b3b3b;
