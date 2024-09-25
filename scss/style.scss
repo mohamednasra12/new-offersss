@@ -2,6 +2,11 @@
 @import "../scss/nav_bar";
 @import "../scss/content_style";
 @import "../scss/footer_style";
+@import "../scss/responsive/_mobile.scss";
+@import "../scss/responsive/_tablet.scss";
+@import "../scss/responsive/_smalllabtop.scss";
+@import "../scss/responsive/_labtop.scss";
+@import "../scss/responsive/_4k.scss";
 @font-face {
   font-family: "bold";
   src: url("../font/alfont_com_Somar-Bold.otf");
