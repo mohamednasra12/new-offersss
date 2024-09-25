@@ -1,0 +1,130 @@
+@import "../scss/top_nav";
+@import "../scss/nav_bar";
+@import "../scss/content_style";
+@import "../scss/footer_style";
+@font-face {
+  font-family: "bold";
+  src: url("../font/alfont_com_Somar-Bold.otf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../font/alfont_com_Somar-Regular.otf");
+}
+@font-face {
+  font-family: "light";
+  src: url("../font/alfont_com_Somar-Light.otf");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("../font/alfont_com_Somar-Medium.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$direction: rtl ;
+
+body {
+  direction: $direction ;
+  text-align: if($direction == rtl, right, left);
+}
+:root {
+  --one-color: #3b3b3b;
+  --two-color: #a2391d;
+  --three-color: #47767014;
+  --four-color: #f8f8f8;
+  --fifve-color: #0b1427;
+  --six-color: #477670;
+  --seven-color: #deb349;
+  --eight-color: #dcdcdc;
+  --nine-color: #ffae4452;
+  --ten-color: #3b3b3b;
+  --bg-color: #ffffff;
+}
+.big-button {
+  padding: 12px 50px;
+
+  background-color: var(--two-color);
+  border: 0;
+  border-radius: 6px;
+  color: var(--bg-color);
+  font-family: "regular";
+  &:hover {
+    background-color: var(--three-color);
+    color: var(--fifve-color);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.mid-button {
+  padding: 10px 20px;
+  background-color: var(--two-color);
+  border: 0;
+  border-radius: 6px;
+  color: var(--bg-color);
+  font-family: "regular";
+  &:hover {
+    background-color: var(--three-color);
+    color: var(--fifve-color);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.small-button {
+  padding: 5px 10px;
+  background-color: var(--two-color);
+  border: 0;
+  border-radius: 6px;
+  color: var(--bg-color);
+  font-family: "regular";
+  &:hover {
+    background-color: var(--three-color);
+    color: var(--fifve-color);
+    transition: all 0.3s ease-in-out;
+  }
+}
+#scrollToTop {
+       position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+    background-color: var(--seven-color);
+    color: #fff;
+    border-radius: 50%;
+    /* padding: 10px; */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    width: 43px;
+    height: 43px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+#scrollToTop:hover {
+    background-color: #9a5d4a85;
+}
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important; 
+}
+
+/* تخصيص لون خلفية شريط التمرير */
+::-webkit-scrollbar-track {
+  background-color: var(--two-color) !important;
+}
+
+/* تخصيص شريط التمرير نفسه */
+::-webkit-scrollbar-thumb {
+  background-color: var(--seven-color) !important; 
+  border-radius: 10px !important;
+}
+
+/* عند التمرير */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff0000 !important; 
+  scrollbar-width: thin; 
+}
+
+/* لتخصيص شريط التمرير في متصفح فايرفوكس */

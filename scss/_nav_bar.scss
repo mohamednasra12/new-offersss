@@ -1,0 +1,39 @@
+div#navbarSupportedContent {
+  justify-content: center !important;
+  align-items: center !important;
+  flex-grow: unset !important;
+  margin: auto !important;
+}
+.logopng {
+  width: 123px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 90%;
+  }
+}
+li.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.nav-link {
+  font-family: "regular";
+  color: black;
+  &:hover {
+    color: var(--seven-color);
+  }
+}
+a.nav-link.active {
+  font-family: "bold";
+  border-bottom: 3px solid;
+  border-color: var(--two-color);
+  color: black;
+}
+ul.dropdown-menu.show {
+  li {
+    font-family: "regular";
+  }
+}
