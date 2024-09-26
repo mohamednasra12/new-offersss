@@ -31,7 +31,7 @@
 $direction: rtl  !important;
 
 body {
- 
+ overflow-x: hidden;
   text-align: if($direction == rtl !important, right, left !important);
 }
 :root {
@@ -133,3 +133,7 @@ body {
 }
 
 /* لتخصيص شريط التمرير في متصفح فايرفوكس */
+.wow {
+    animation-duration: 2s !important; /* تعيين مدة الحركة */
+    
+}

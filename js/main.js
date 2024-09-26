@@ -97,3 +97,18 @@ document.getElementById("scrollToTop").onclick = function (event) {
   event.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+wow = new WOW({
+  boxClass: "wow", // default
+  animateClass: "animated", // default
+  offset: 0, // default
+  mobile: false, // default
+  live: true, // default
+});
+wow.init();
+document.addEventListener("DOMContentLoaded", function () {
+  const wowElements = document.querySelectorAll(".wow");
+
+  wowElements.forEach((element) => {
+    element.setAttribute("data-wow-duration", "2s"); // تعيين مدة الحركة
+  });
+});
