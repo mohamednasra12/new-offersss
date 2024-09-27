@@ -859,8 +859,9 @@ ul.dropdown-menu.show li {
     display: block;
   }
   .logopng {
-    width: 100%;
+    width: 20%;
     height: 100%;
+    display: block;
   }
   .allend-footer {
     display: block;
@@ -990,8 +991,9 @@ ul.dropdown-menu.show li {
     display: block;
   }
   .logopng {
-    width: 100%;
+    width: 20%;
     height: 100%;
+    display: block;
   }
   .main-footer img {
     width: 78%;
