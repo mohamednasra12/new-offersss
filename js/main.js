@@ -1,34 +1,25 @@
-// إغلاق القائمة الجانبية عند النقر على أي رابط داخلها
-document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    const navbarCollapse = document.getElementById("navbarSupportedContent");
-
-    // تحقق مما إذا كانت القائمة مفتوحة
-    if (navbarCollapse.classList.contains("show")) {
-      // استخدم Bootstrap Collapse API لإغلاق القائمة بشكل صحيح
-      const collapse =
-        bootstrap.Collapse.getInstance(navbarCollapse) ||
-        new bootstrap.Collapse(navbarCollapse);
-      collapse.hide();
-    }
-  });
-});
-
 // تحديث المحتوى بناءً على اللغة المختارة
 function updateContent(lang) {
-  const img = document.getElementById("img-hero");
-  if (lang === "ar") {
-    document.body.style.display = "block";
-    document.documentElement.setAttribute("lang", "ar");
-    document.documentElement.setAttribute("dir", "rtl");
-    document.body.style.textAlign = "right"; // محاذاة النص لليمين
-    img.style.transform = "rotateY(360deg)";
+  const imgs = document.getElementById("imgheros");
+
+  // Check if img exists before modifying its style
+  if (imgs) {
+    if (lang === "ar") {
+      document.body.style.display = "block";
+      document.documentElement.setAttribute("lang", "ar");
+      document.documentElement.setAttribute("dir", "rtl");
+      document.body.style.textAlign = "right"; // محاذاة النص لليمين
+      imgs.style.transform = "rotateY(360deg)";
+    } else {
+      document.body.style.display = "block";
+      document.documentElement.setAttribute("lang", "en");
+      document.documentElement.setAttribute("dir", "ltr");
+      document.body.style.textAlign = "left"; // محاذاة النص لليسار
+      imgs.style.transform = "rotateY(180deg)";
+    }
   } else {
-    document.body.style.display = "block";
-    document.documentElement.setAttribute("lang", "en");
-    document.documentElement.setAttribute("dir", "ltr");
-    document.body.style.textAlign = "left"; // محاذاة النص لليسار
-    img.style.transform = "rotateY(180deg)";
+    console.error("Element with ID 'img-heros' not found.");
+    console.log(imgs);
   }
 }
 
@@ -71,6 +62,7 @@ footerLinks.forEach((link) => {
     this.classList.add("active");
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButtons = document.querySelectorAll("#toggle-btn");
 
@@ -84,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 window.onscroll = function () {
   const scrollToTopButton = document.getElementById("scrollToTop");
   if (
@@ -100,6 +93,7 @@ document.getElementById("scrollToTop").onclick = function (event) {
   event.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
 wow = new WOW({
   boxClass: "wow", // default
   animateClass: "animated", // default
@@ -108,6 +102,7 @@ wow = new WOW({
   live: true, // default
 });
 wow.init();
+
 document.addEventListener("DOMContentLoaded", function () {
   const wowElements = document.querySelectorAll(".wow");
 
@@ -116,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     element.setAttribute("data-wow-delay", "0.2s"); // تعيين تأخير الحركة إلى 0
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
