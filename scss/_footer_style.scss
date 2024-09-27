@@ -49,6 +49,11 @@
     p {
       font-family: "regular";
       color: white;
+      transition: 0.7s;
+      &:hover {
+        transform: translateX(-10px);
+        color: var(--seven-color);
+      }
     }
   }
 }
@@ -63,3 +68,15 @@
 .links {
   text-align: justify !important;
 }
+.left {
+  a {
+    i {
+      transition: 0.9s;
+      &:hover
+        {
+          color: var(--seven-color);
+          transform: rotate(360deg);
+          }
+      }
+    }
+  }

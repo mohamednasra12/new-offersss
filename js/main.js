@@ -16,16 +16,19 @@
 
 // تحديث المحتوى بناءً على اللغة المختارة
 function updateContent(lang) {
+  const img = document.getElementById("img-hero");
   if (lang === "ar") {
     document.body.style.display = "block";
     document.documentElement.setAttribute("lang", "ar");
     document.documentElement.setAttribute("dir", "rtl");
     document.body.style.textAlign = "right"; // محاذاة النص لليمين
+    img.style.transform = "rotateY(360deg)";
   } else {
     document.body.style.display = "block";
     document.documentElement.setAttribute("lang", "en");
     document.documentElement.setAttribute("dir", "ltr");
     document.body.style.textAlign = "left"; // محاذاة النص لليسار
+    img.style.transform = "rotateY(180deg)";
   }
 }
 
@@ -110,6 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   wowElements.forEach((element) => {
     element.setAttribute("data-wow-duration", "2s"); // تعيين مدة الحركة
-    element.setAttribute('data-wow-delay', '0.2s'); // تعيين تأخير الحركة إلى 0
+    element.setAttribute("data-wow-delay", "0.2s"); // تعيين تأخير الحركة إلى 0
   });
 });

@@ -166,12 +166,12 @@
 
     .content-hero {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      margin: auto;
+     
 
       .text-hero {
-        width: 50%;
+        width: 55%;
         h4 {
           color: white;
           font-family: "bold";
@@ -187,7 +187,7 @@
       }
       .img-hero {
         img {
-          width: 100%;
+          width: 92%;
         }
       }
     }
