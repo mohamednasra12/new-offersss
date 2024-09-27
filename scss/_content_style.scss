@@ -630,4 +630,26 @@
       }
     }
   }
+  .terms {
+    margin: 2rem 0rem;
+    .text {
+      h4 {
+        font-family: "bold";
+        color: var(--seven-color);
+        font-size: 1.5rem;
+      }
+      p {
+        font-family: "regular";
+        font-family: 1.1rem;
+      }
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 90%;
+      }
+    }
+  }
 }
