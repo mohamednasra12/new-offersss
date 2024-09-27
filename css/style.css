@@ -620,6 +620,26 @@ ul.dropdown-menu.show li {
   outline: 0 !important;
   box-shadow: unset !important;
 }
+.bas-des .privacy-policy {
+  margin: 2rem 0rem;
+}
+.bas-des .privacy-policy .text h4 {
+  font-family: "bold";
+  color: var(--seven-color);
+  font-size: 1.5rem;
+}
+.bas-des .privacy-policy .text p {
+  font-family: "regular";
+  font-family: 1.1rem;
+}
+.bas-des .privacy-policy .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bas-des .privacy-policy .img img {
+  width: 90%;
+}
 
 .main-footer {
   background-color: var(--one-color);
