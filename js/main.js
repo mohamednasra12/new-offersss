@@ -110,5 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   wowElements.forEach((element) => {
     element.setAttribute("data-wow-duration", "2s"); // تعيين مدة الحركة
+    element.setAttribute('data-wow-delay', '0.2s'); // تعيين تأخير الحركة إلى 0
   });
 });
