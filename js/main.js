@@ -1,18 +1,18 @@
-// // إغلاق القائمة الجانبية عند النقر على أي رابط داخلها
-// document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
-//   link.addEventListener("click", () => {
-//     const navbarCollapse = document.getElementById("navbarSupportedContent");
+// إغلاق القائمة الجانبية عند النقر على أي رابط داخلها
+document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    const navbarCollapse = document.getElementById("navbarSupportedContent");
 
-//     // تحقق مما إذا كانت القائمة مفتوحة
-//     if (navbarCollapse.classList.contains("show")) {
-//       // استخدم Bootstrap Collapse API لإغلاق القائمة بشكل صحيح
-//       const collapse =
-//         bootstrap.Collapse.getInstance(navbarCollapse) ||
-//         new bootstrap.Collapse(navbarCollapse);
-//       collapse.hide();
-//     }
-//   });
-// });
+    // تحقق مما إذا كانت القائمة مفتوحة
+    if (navbarCollapse.classList.contains("show")) {
+      // استخدم Bootstrap Collapse API لإغلاق القائمة بشكل صحيح
+      const collapse =
+        bootstrap.Collapse.getInstance(navbarCollapse) ||
+        new bootstrap.Collapse(navbarCollapse);
+      collapse.hide();
+    }
+  });
+});
 
 // تحديث المحتوى بناءً على اللغة المختارة
 function updateContent(lang) {
@@ -114,5 +114,17 @@ document.addEventListener("DOMContentLoaded", function () {
   wowElements.forEach((element) => {
     element.setAttribute("data-wow-duration", "2s"); // تعيين مدة الحركة
     element.setAttribute("data-wow-delay", "0.2s"); // تعيين تأخير الحركة إلى 0
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      // إزالة 'active' من جميع الروابط
+      navLinks.forEach((nav) => nav.classList.remove("active"));
+      // إضافة 'active' للرابط الذي تم النقر عليه
+      this.classList.add("active");
+    });
   });
 });
