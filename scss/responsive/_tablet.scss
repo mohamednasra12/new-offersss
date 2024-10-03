@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    body {
+  body {
     font-size: 0.8rem !important;
   }
 
@@ -44,7 +44,7 @@
       display: none;
     }
   }
-  
+
   .bas-des .main_content .offers-descount .allof .text {
     width: 100%;
   }
@@ -83,7 +83,7 @@
     gap: 10px;
     margin-bottom: 2rem;
   }
-  
+
   .bas-des .main_content .insite-email .content img {
     width: 40%;
     height: 100%;
@@ -102,7 +102,7 @@
     width: 100%;
     text-align: center;
   }
-  
+
   .bas-des .main_content .come .content .text button {
     width: 100%;
   }
@@ -110,35 +110,52 @@
   .bas-des .main_content .ask-que {
     padding: 0rem;
   }
-    .bas-des .main_content .come .content .img h4 {
-   
+  .bas-des .main_content .come .content .img h4 {
     top: 8rem;
     right: 6rem;
-   
-}
+  }
   li.nav-item {
     display: block;
   }
-    .logopng {
-        width: 20%;
-        height: 100%;
-        display: block;
-    }
-      
-        .main-footer img {
+  .logopng {
+    width: 20%;
+    height: 100%;
+    display: block;
+  }
+
+  .main-footer img {
     width: 78%;
-}
+  }
   .main-footer {
     height: 100%;
   }
-    .bas-des .main_content .phone-text .img {
-  
+  .bas-des .main_content .phone-text .img {
     margin-top: 3rem;
-}
+  }
   .bas-des .main_content .main-header {
-  
     margin-top: 0rem;
+  }
+  .bas-des .main_content .three-way .card-threeway .img img {
+    height: 180px;
+  }
+  .bas-des .main_content .sec-hero .button-hero button {
+    padding: 0.5rem;
+  }
+  .bas-des .main_content .sec-hero .button-hero button img {
+    width: 4%;
 }
-  .bas-des .main_content .three-way .card-threeway .img img{
-    height: 180PX;}
+.bas-des .main_content .sec-hero .button-hero button {
+  font-size: 0.8rem !important;
+}
+.bas-des .main_content .three-way .card-threeway {
+  margin: 1rem 0.5rem !important;
+  margin-top: 2rem !important;
+}
+.bas-des .main_content .three-way .card-threeway .img img {
+  height: 198px !important;
+}
+.bas-des .main_content .phone-text .text .button-text button img {
+  margin-right: 15px;
+  width: 13%;
+}
 }
