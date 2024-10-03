@@ -54,7 +54,7 @@
     width: 100%;
   }
   .bas-des .main_content .offers-descount .allof .img img {
-    width: 54% !important;
+    width: 80% !important;
   }
   .bas-des .main_content .offers-descount {
     height: 386px;
@@ -145,5 +145,27 @@
   .bas-des .main_content .main-header {
   
     margin-top: 3rem;
+}
+.bas-des .main_content .sec-hero .button-hero button img {
+  margin-right: 15px;
+  width: 8%;
+}
+.bas-des .main_content .three-way .card-threeway .img img {
+  height: 323px !important;
+}
+.bas-des .main_content .phone-text .text .button-text button img {
+  margin-right: 15px;
+  width: 14%;
+}
+.bas-des .main_content .ask-que div#accordionExample button.accordion-button {
+
+  font-size: 0.7rem;
+}
+.accordion-body {
+  padding: 1rem 1.25rem;
+  font-size: 0.6rem;
+}
+.main-footer {
+  height: 423px !important;
 }
 }
