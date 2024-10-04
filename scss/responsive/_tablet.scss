@@ -152,10 +152,22 @@
   margin-top: 2rem !important;
 }
 .bas-des .main_content .three-way .card-threeway .img img {
-  height: 198px !important;
+  height: 198px ;
 }
 .bas-des .main_content .phone-text .text .button-text button img {
   margin-right: 15px;
   width: 13%;
 }
+  .bas-des .discount img{
+    width: 100%;
+    height: unset;
+    }
+  .bas-des .discount-copone img{
+    width: 100%;
+    height: unset;
+    }
+ .bas-des .discount-code img{
+    width: 100%;
+    height: unset;
+    }
 }

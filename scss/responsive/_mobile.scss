@@ -148,7 +148,7 @@
 }
 .bas-des .main_content .sec-hero .button-hero button img {
   margin-right: 15px;
-  width: 8%;
+  width: 8% !important;
 }
 .bas-des .main_content .three-way .card-threeway .img img {
   height: 323px !important;
@@ -168,4 +168,16 @@
 .main-footer {
   height: 423px !important;
 }
+    .bas-des .discount img{
+    width: 65% !important;
+    height: unset;
+    }
+  .bas-des .discount-copone img{
+    width: 65% !important;
+    height: unset;
+    }
+ .bas-des .discount-code img{
+    width: 65% !important;
+    height: unset;
+    }
 }
