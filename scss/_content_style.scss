@@ -656,6 +656,9 @@
     }
   }
   .discount {
+    .mid-dis {
+      text-decoration: none;
+    }
     .btn-more {
       margin-top: 3rem;
       button.more-dis {
@@ -675,8 +678,58 @@
       color: black;
     }
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     .all-dis {
+      .small-code {
+        background: #a2391d;
+        padding: 0.3rem;
+        border-radius: 10px 0 10px 0;
+        color: white;
+        margin-left: -11px;
+      }
+      .img-code {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          margin: 0;
+          font-size: 0.6rem;
+        }
+      }
+      button.code-btn {
+        border: 1px solid #a2391d;
+        width: 100%;
+        padding: 0.5rem;
+        color: white;
+        background: linear-gradient(to right, transparent 50%, #a2391d 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        border-radius: 7px;
+        transition: all 0.7s ease;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background-position: left bottom;
+          color: #a2391d;
+          letter-spacing: 1px;
+          border: 1px solid #a2391d;
+          font-family: "bold";
+        }
+
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      .img-code {
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 6px;
+        }
+      }
       .dis-tex {
         display: flex;
         justify-content: end;
@@ -689,10 +742,10 @@
           font-family: "regular";
           padding: 0.2rem 0.5rem;
           border-radius: 6px;
-          }
-            .old {
-              text-decoration: line-through;
-              }
+        }
+        .old {
+          text-decoration: line-through;
+        }
       }
       .small-dis {
         position: absolute;
@@ -762,11 +815,13 @@
       }
       .img {
         overflow: hidden;
-        transition: 0.5s;
+        transition: 0.7s;
       }
 
       &:hover .img img {
-        transform: scale(1.5);
+        transform: scale(1.4) rotate(15deg);
+
+        filter: brightness(0.5);
       }
     }
     .hed-dis {
@@ -853,5 +908,97 @@
         }
       }
     }
+  }
+  .main-detalis {
+    .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-rtl {
+      height: 75vh;
+      margin-bottom: 2rem;
+    }
+    .swiper {
+      img {
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+      }
+
+      .swiper-button-prev {
+        color: #a2391d;
+      }
+      .swiper-button-next {
+        color: #a2391d;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #a2391d;
+      }
+    }
+    .frist-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 6px;
+        font-family: "bold";
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #a2391d;
+        }
+      }
+      p {
+        background-color: #a2391d;
+        color: white;
+        font-family: "regular";
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 6px;
+        margin-bottom: 0;
+      }
+    }
+    .sec-text {
+      h4 {
+        font-family: "bold";
+        font-size: 1rem;
+        margin-top: 3rem;
+      }
+      p {
+        font-family: "regular";
+      }
+      .dis-box {
+        background-color: #a2391d;
+        width: fit-content;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+        p {
+          margin-bottom: 0;
+          color: white;
+        }
+      }
+    }
+    .last-text {
+      p {
+        font-family: "regular";
+
+        margin-bottom: 0.8rem;
+        span {
+          margin-right: 0.5rem;
+          font-family: "bold";
+        }
+      }
+      i {
+        background: #a2391d;
+        padding: 0.5rem;
+        border-radius: 50%;
+        color: white;
+      }
+    }
+      #map {
+        margin-bottom: 1rem;
+        }
   }
 }

@@ -12,21 +12,25 @@
   .bas-des .main_content .come .content {
     width: 100%;
   }
-    .bas-des .main_content .three-way .card-threeway .img img {
-
+  .bas-des .main_content .three-way .card-threeway .img img {
     height: 224px;
-
-}
-    .bas-des .discount img{
+  }
+  .bas-des .discount img {
     width: 100%;
     height: unset;
-    }
-  .bas-des .discount-copone img{
+  }
+  .bas-des .discount-copone img {
     width: 100%;
     height: unset;
-    }
- .bas-des .discount-code img{
+  }
+  .bas-des .discount-code img {
     width: 100%;
     height: unset;
-    }
+  }
+  .bas-des .discount .btn-more {
+    margin-top: 2rem;
+  }
+  #map {
+    margin-bottom: 1rem;
+  }
 }

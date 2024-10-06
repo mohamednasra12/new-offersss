@@ -124,3 +124,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+ var swiper = new Swiper(".mySwiper", {
+   spaceBetween: 30,
+   centeredSlides: true,
+   autoplay: {
+     delay: 3500,
+     disableOnInteraction: false,
+   },
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+ });
+ var map = L.map("map").setView([24.7136, 46.6753], 13); // إحداثيات الرياض
+
+ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+   attribution: "&copy; OpenStreetMap contributors",
+ }).addTo(map);
+
+ L.marker([24.7136, 46.6753])
+   .addTo(map)
+   .bindPopup("موقع في الرياض.")
+   .openPopup();

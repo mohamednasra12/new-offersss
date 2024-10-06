@@ -143,31 +143,60 @@
   }
   .bas-des .main_content .sec-hero .button-hero button img {
     width: 4%;
-}
-.bas-des .main_content .sec-hero .button-hero button {
-  font-size: 0.8rem !important;
-}
-.bas-des .main_content .three-way .card-threeway {
-  margin: 1rem 0.5rem !important;
-  margin-top: 2rem !important;
-}
-.bas-des .main_content .three-way .card-threeway .img img {
-  height: 198px ;
-}
-.bas-des .main_content .phone-text .text .button-text button img {
-  margin-right: 15px;
-  width: 13%;
-}
-  .bas-des .discount img{
+  }
+  .bas-des .main_content .sec-hero .button-hero button {
+    font-size: 0.8rem !important;
+  }
+  .bas-des .main_content .three-way .card-threeway {
+    margin: 1rem 0.5rem !important;
+    margin-top: 2rem !important;
+  }
+  .bas-des .main_content .three-way .card-threeway .img img {
+    height: 198px;
+  }
+  .bas-des .main_content .phone-text .text .button-text button img {
+    margin-right: 15px;
+    width: 13%;
+  }
+  .bas-des .discount img {
     width: 100%;
     height: unset;
-    }
-  .bas-des .discount-copone img{
+  }
+  .bas-des .discount-copone img {
     width: 100%;
     height: unset;
-    }
- .bas-des .discount-code img{
+  }
+  .bas-des .discount-code img {
     width: 100%;
     height: unset;
-    }
+  }
+  .bas-des .discount .all-dis p {
+    font-size: 0.8rem !important;
+  }
+  .bas-des .discount .all-dis .img-code img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .bas-des .discount .all-dis .img-code p {
+    font-size: 0.5rem !important;
+  }
+  .bas-des .discount .all-dis button.code-btn {
+    padding: 0.3rem;
+    font-size: 0.6rem;
+  }
+  .bas-des .discount .all-dis p {
+    font-size: 0.6rem !important;
+  }
+
+  .bas-des .discount .btn-more {
+    margin-top: 2rem;
+  }
+  #map {
+    margin-bottom: 1rem;
+  }
+  .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-rtl {
+    height: 48vh !important;
+    margin-bottom: 1rem !important;
+  }
 }
