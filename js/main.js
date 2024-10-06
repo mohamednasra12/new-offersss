@@ -2,24 +2,21 @@
 function updateContent(lang) {
   const imgs = document.getElementById("imgheros");
 
-  // Check if img exists before modifying its style
-  if (imgs) {
-    if (lang === "ar") {
-      document.body.style.display = "block";
-      document.documentElement.setAttribute("lang", "ar");
-      document.documentElement.setAttribute("dir", "rtl");
-      document.body.style.textAlign = "right"; // محاذاة النص لليمين
+  // تعيين خصائص الوثيقة وفقًا للغة المختارة
+  if (lang === "ar") {
+    document.documentElement.setAttribute("lang", "ar");
+    document.documentElement.setAttribute("dir", "rtl");
+    document.body.style.textAlign = "right"; // محاذاة النص لليمين
+    if (imgs) {
       imgs.style.transform = "rotateY(360deg)";
-    } else {
-      document.body.style.display = "block";
-      document.documentElement.setAttribute("lang", "en");
-      document.documentElement.setAttribute("dir", "ltr");
-      document.body.style.textAlign = "left"; // محاذاة النص لليسار
-      imgs.style.transform = "rotateY(180deg)";
     }
   } else {
-    console.error("Element with ID 'img-heros' not found.");
-    console.log(imgs);
+    document.documentElement.setAttribute("lang", "en");
+    document.documentElement.setAttribute("dir", "ltr");
+    document.body.style.textAlign = "left"; // محاذاة النص لليسار
+    if (imgs) {
+      imgs.style.transform = "rotateY(180deg)";
+    }
   }
 }
 
@@ -124,29 +121,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
- var swiper = new Swiper(".mySwiper", {
-   spaceBetween: 30,
-   centeredSlides: true,
-   autoplay: {
-     delay: 3500,
-     disableOnInteraction: false,
-   },
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-   },
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
- });
- var map = L.map("map").setView([24.7136, 46.6753], 13); // إحداثيات الرياض
 
- L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-   attribution: "&copy; OpenStreetMap contributors",
- }).addTo(map);
+   document.addEventListener("DOMContentLoaded", function () {
+     // إعداد الخريطة
+     var map = L.map("map").setView([24.7136, 46.6753], 13); // إحداثيات الرياض
 
- L.marker([24.7136, 46.6753])
-   .addTo(map)
-   .bindPopup("موقع في الرياض.")
-   .openPopup();
+     // إضافة طبقة الخرائط
+     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+       attribution: "&copy; OpenStreetMap contributors",
+     }).addTo(map);
+
+     // إضافة علامة
+     L.marker([24.7136, 46.6753])
+       .addTo(map)
+       .bindPopup("موقع في الرياض.")
+       .openPopup();
+   });s

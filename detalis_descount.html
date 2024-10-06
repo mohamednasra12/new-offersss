@@ -123,6 +123,7 @@
       <!-- main_content -->
       <div class="main_content">
         <div class="main-detalis">
+          <div class="imgheros"></div>
           <!-- sweper يا درش خلي بالك  -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -221,7 +222,7 @@
               </p>
             </div>
             <hr />
-            <div id="map" style="height: 300px;"></div>
+            <div id="map" style="height: 300px"></div>
           </div>
           <!-- text يا درش خلي بالك  -->
         </div>
@@ -265,16 +266,36 @@
           </div>
         </div>
       </footer>
+
       <a id="scrollToTop" href="#" style="display: none">&#8593;</a>
       <!-- footer -->
     </div>
+
     <!-- Swiper JS -->
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
   <!-- لحد هنا ال body -->
