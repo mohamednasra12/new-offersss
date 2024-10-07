@@ -33,20 +33,6 @@ document
 // تعيين اللغة الافتراضية
 updateContent("ar"); // أو "en" حسب اللغة الافتراضية التي تريدها
 
-// إضافة وإزالة فئة 'active' من روابط التنقل (Navbar)
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      // إزالة 'active' من جميع الروابط
-      navLinks.forEach((nav) => nav.classList.remove("active"));
-      // إضافة 'active' للرابط الذي تم النقر عليه
-      this.classList.add("active");
-    });
-  });
-});
-
 // إضافة وإزالة فئة 'active' من روابط الفوتر (Footer)
 const footerLinks = document.querySelectorAll(".footer-link");
 
@@ -122,18 +108,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-   document.addEventListener("DOMContentLoaded", function () {
-     // إعداد الخريطة
-     var map = L.map("map").setView([24.7136, 46.6753], 13); // إحداثيات الرياض
+document.addEventListener("DOMContentLoaded", function () {
+  // إعداد الخريطة
+  var map = L.map("map").setView([24.7136, 46.6753], 13); // إحداثيات الرياض
 
-     // إضافة طبقة الخرائط
-     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-       attribution: "&copy; OpenStreetMap contributors",
-     }).addTo(map);
+  // إضافة طبقة الخرائط
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors",
+  }).addTo(map);
 
-     // إضافة علامة
-     L.marker([24.7136, 46.6753])
-       .addTo(map)
-       .bindPopup("موقع في الرياض.")
-       .openPopup();
-   });s
+  // إضافة علامة
+  L.marker([24.7136, 46.6753])
+    .addTo(map)
+    .bindPopup("موقع في الرياض.")
+    .openPopup();
+});
+
+// الحصول على الرابط الحالي بدون جزء الاستعلام (query string) أو الهاش (hash)
+const currentPage = window.location.pathname.split("/").pop();
+
+// تحديد كل الروابط في القائمة
+const navLinks = document.querySelectorAll(".nav-link");
+
+// تكرار على كل رابط وتحديد الرابط النشط
+navLinks.forEach((link) => {
+  const linkPage = link.getAttribute("href").split("/").pop();
+
+  // إذا تطابق الرابط مع الصفحة الحالية
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});

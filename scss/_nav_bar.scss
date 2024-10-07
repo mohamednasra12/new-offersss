@@ -36,4 +36,10 @@ ul.dropdown-menu.show {
   li {
     font-family: "regular";
   }
+  .nav-link.active {
+    font-family: "bold";
+    border-bottom: 3px solid;
+    border-color: var(--two-color);
+    color: black;
+  }
 }
