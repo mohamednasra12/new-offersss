@@ -91,25 +91,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">المقدمه</a>
+                  <a class="nav-link" href="Index.html">المقدمه</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about_us.html">من نحن؟</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">خدامتنا</a>
+                  <a class="nav-link" href="pionts.html">أكسب نقاط</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">شركاء عملنا</a>
+                  <a class="nav-link" href="subscription.html"
+                    >باقات الاشتراك</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">المجالات</a>
+                  <a class="nav-link" href="copon_grid.html">الكوبونات</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">باقات الاشتراك</a>
+                  <a class="nav-link" href="code_grid.html">لأكواد الخصم</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">تواصل معنا</a>
+                  <a class="nav-link" href="contact-us.html">تواصل معنا</a>
                 </li>
               </ul>
             </div>
@@ -120,6 +122,42 @@
 
       <!-- main_content -->
       <div class="main_content">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="photo/footerlogo.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/footerlogo.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/nasra.png.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/nasra.png.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/nasra.png.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/footerlogo.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/nasra.png.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/footerlogo.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/nasra.png.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="photo/footerlogo.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
         <div class="main-title">
           <h1>الكوبونات</h1>
         </div>
@@ -499,7 +537,7 @@
       <!-- main_content -->
 
       <!-- footer -->
-        <footer class="footer">
+      <footer class="footer">
         <div class="main-footer">
           <div class="container">
             <div class="header">
@@ -550,6 +588,54 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5, // عدد الصور المعروضة في الشاشات الكبيرة
+        spaceBetween: 20, // المسافة بين الصور
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          425:{
+              slidesPerView: 1,
+          },
+          // عند الشاشات الأقل من 768 بكسل
+          768: {
+            slidesPerView: 1, // عدد الصور المعروضة هو 1
+          },
+          // عند الشاشات من 768 بكسل وما فوق
+          769: {
+            slidesPerView: 3, // يمكنك تعديل العدد هنا حسب الحاجة
+          },
+        },
+      });
+    </script>
+    <style>
+      .swiper {
+        margin: auto;
+        overflow: hidden; /* لتوسيط السلايدر */
+      }
+      .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-rtl.swiper-backface-hidden {
+        height: 90px;
+      }
+      .swiper img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        height: 87px;
+      }
+      @media screen and (max-width: 768px) {
+        .swiper img {
+          height: 222px;
+        }
+      }
+    </style>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
