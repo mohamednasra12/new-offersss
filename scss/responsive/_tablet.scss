@@ -199,4 +199,20 @@
     height: 48vh !important;
     margin-bottom: 1rem !important;
   }
+    .bas-des .tabs-page ul#pills-tab {
+    background: #dcdcdc;
+    padding: .3rem;
+    border-radius: 11px;
+    width: 67%;
+}
+  .bas-des .tabs-page li.nav-item {
+    width: 33%;
+    display: flex !important;
+}
+  .bas-des .tabs-page .tab-content>.active {
+ 
+    gap: 9px !important;
+ 
+}
+
 }

@@ -775,18 +775,18 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       position: relative;
       p {
-           font-size: .8rem;
-    font-family: "regular";
-    font-family: "regular";
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 6px;
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+        font-size: 0.8rem;
+        font-family: "regular";
+        font-family: "regular";
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 6px;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         .circless {
           width: 25px;
           height: 25px;
@@ -846,21 +846,21 @@
       }
     }
   }
-    .main-title {
-      background-color: var(--four-color);
-      margin: auto;
-      text-align: center;
-      margin-top: 3rem;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h1 {
-        font-family: "bold";
-        font-size: 1.8rem;
-        color: #a2391d;
-        }
-      }
+  .main-title {
+    background-color: var(--four-color);
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "bold";
+      font-size: 1.8rem;
+      color: #a2391d;
+    }
+  }
   .main-grid {
     margin-bottom: 1rem;
     padding: 0.5rem 2rem;
@@ -879,8 +879,8 @@
       }
     }
     img {
-     width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
     }
     a {
       color: black;
@@ -1212,4 +1212,239 @@
   .mySwiper {
     direction: rtl;
   }
+  .tabs-page {
+    div#pills-tabContent {
+    margin-top: 4rem;
+}
+    .headers {
+      margin-bottom: 2rem;
+      h4{
+        font-family: "bold";
+        font-size: 1.4rem;
+        span {
+          border-bottom: 2px solid var(--two-color);
+        }
+        }
+      }
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ul#pills-tab {
+      background: #dcdcdc;
+      padding: 0.3rem;
+      border-radius: 11px;
+      width: 50%;
+    }
+    li.nav-item {
+      width: 33%;
+    }
+    .nav-pills .nav-link {
+      color: black;
+      font-family: "regular";
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      background: #477670 !important;
+      font-family: "bold";
+      color: white;
+      font-size: 0.9rem;
+      width: 94%;
+    }
+    .tab-content > .active {
+      display: flex !important;
+      gap: 30px !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .sub_body {
+      .color-tow {
+        background: #deb349;
+        width: 100%;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: -0.5rem;
+      }
+      .color-three {
+        background: #477670;
+        width: 100%;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: -0.5rem;
+      }
+      button.sub_btn-two {
+        font-size: 1rem;
+        border: 0;
+        background: #deb349;
+        width: 84%;
+        height: 51px;
+        color: white;
+        font-family: "bold";
+        border-radius: 0 30px 0 30px;
+         &:hover {
+        background: #DEB449E1; // لون الخلفية عند التمرير
+        animation: shake 1s ease; // إضافة الرسوم المتحركة
+        cursor: pointer; // تغيير شكل المؤشر
+    }
+      }
+      button.sub_btn-three {
+        font-size: 1rem;
+        border: 0;
+        background: #477670;
+        width: 84%;
+        height: 51px;
+        color: white;
+        font-family: "bold";
+        border-radius: 0 30px 0 30px;
+        &:hover {
+        background: #477670D8; // لون الخلفية عند التمرير
+        animation: shake 1s ease; // إضافة الرسوم المتحركة
+        cursor: pointer; // تغيير شكل المؤشر
+    }
+      }
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+   
+    50% { transform: translateX(50px); }
+  
+    100% { transform: translateX(0); }
+}
+
+button.sub_btn {
+    font-size: 1rem;
+    border: 0;
+    background: #3b3b3b;
+    width: 84%;
+    height: 51px;
+    color: white;
+    font-family: "bold";
+    border-radius: 0 30px 0 30px;
+    transition: background 0.3s ease; // تأثير الانتقال
+
+    &:hover {
+        background: #575757; // لون الخلفية عند التمرير
+        animation: shake 1s ease; // إضافة الرسوم المتحركة
+        cursor: pointer; // تغيير شكل المؤشر
+    }
+}
+
+
+      .denger {
+        h4 {
+          color: #a2391d;
+          font-family: "bold";
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .pris-two {
+        background: #deb349;
+        color: white;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-family: "bold";
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 30px;
+         p {
+          margin-bottom: 0;
+        }
+      }
+      .pris-three {
+        background: #477670;
+        color: white;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-family: "bold";
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 30px;
+         p {
+          margin-bottom: 0;
+        }
+      }
+      .pris {
+        background: #3b3b3b;
+        color: white;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-family: "bold";
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 30px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      h4.title {
+        font-family: "bold";
+        font-size: 1.1rem;
+        color: #3b3b3b;
+      }
+      text-align: center;
+      background: white;
+
+      box-shadow: 0px 1px 14px 3px #00000033;
+      border-radius: 5px;
+      width: 100%;
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        li {
+          border-bottom: 1px dashed #dcdcdc;
+          padding: 0.4rem;
+          font-family: "regular";
+          font-size: 0.9rem;
+          color: #4b474f;
+        }
+      }
+      .color {
+        width: 100%;
+        height: 10px;
+        background: #3b3b3b;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: -0.5rem;
+      }
+      .content {
+        padding: 0.5rem;
+      }
+    }
+  }
+    .contact-us {
+      padding: 2rem;
+      button {
+        margin-top: 1rem;
+        width: 100%;
+         font-size: 1rem;
+    border: 0;
+    background: var(--two-color);
+    height: 51px;
+    color: white;
+    font-family: "bold";
+    border-radius: 6px;
+    transition: 0.7s;
+    &:hover{
+      background: #fff;
+      color: var(--two-color);
+      border: 1px solid var(--two-color);
+      }
+      
+        }
+      }
 }

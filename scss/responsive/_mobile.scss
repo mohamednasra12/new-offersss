@@ -205,4 +205,21 @@
     height: 48vh  !important;
     margin-bottom: 1rem !important;
   }
+    .bas-des .tabs-page .tab-content>.active {
+      display: block !important;
+      }
+        .sub_body {
+    margin-bottom: 2rem;
+}
+  .bas-des .tabs-page ul#pills-tab {
+    width: 100%;}
+    .bas-des .tabs-page .nav-pills .nav-link.active, .bas-des .tabs-page .nav-pills .show>.nav-link{
+      font-size: 0.7rem;
+      }
+        .bas-des .tabs-page .nav-pills{
+            font-size: 0.6rem;
+          }
+            div#pills-tabContent {
+    width: 94% !important;
+}
 }
