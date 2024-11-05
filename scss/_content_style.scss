@@ -695,6 +695,11 @@
         p {
           margin: 0;
           font-size: 0.6rem;
+          display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
         }
       }
       button.code-btn {
@@ -902,6 +907,11 @@
         p {
           margin: 0;
           font-size: 0.6rem;
+          display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
         }
       }
       button.code-btn {
@@ -989,7 +999,13 @@
         justify-content: start;
         align-items: center;
         gap: 6px;
+        display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
         .circless {
+              margin-left: 9px;
           width: 25px;
           height: 25px;
           border: 1px solid #a2391d;
@@ -1063,6 +1079,11 @@
           margin-top: 0.5rem;
           font-size: 0.7rem;
           font-family: "bold";
+          display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
         }
       }
     }
@@ -1098,6 +1119,11 @@
           margin-top: 1rem;
           font-size: 1rem;
           font-family: "bold";
+          display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
         }
       }
     }
@@ -1337,6 +1363,11 @@ button.sub_btn {
           font-family: "bold";
           font-size: 1.1rem;
           margin-bottom: 1rem;
+ display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
         }
       }
       .pris-two {
