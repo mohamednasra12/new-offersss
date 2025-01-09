@@ -4,9 +4,12 @@ div#navbarSupportedContent {
   flex-grow: unset !important;
   margin: auto !important;
 }
+.navbar-nav {
+  gap: 20px !important;
+}
 .logopng {
-  width: 123px;
-  height: 54px;
+  width: 230.05px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,5 +44,12 @@ ul.dropdown-menu.show {
     border-bottom: 3px solid;
     border-color: var(--two-color);
     color: black;
+  }
+}
+.canvs {
+  background-color: unset !important;
+  border: none !important;
+  i {
+    font-size: 1.1rem;
   }
 }
